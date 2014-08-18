@@ -122,4 +122,41 @@
         'shape-margin': {types: ['length', 'percentage', 'calc']},
         'shape-image-threshold': {types: ['number']},
     };
+
+    /**
+     * Check if a CSS property can be animated
+     * @param  {string} property CSS property name
+     * @return {boolean}         True if the property can be animated
+     */
+    exports.canAnimate = function (property) {
+        return props.hasOwnProperty(property);
+    };
+
+    /**
+     * Get a definition of how a CSS property can be animated
+     * @param  {string} property CSS property name
+     * @param  {boolean} expand  Expand definitions for sub-properties, when available
+     * @return {object}          Property definition, or null if it can't be animated
+     */
+    exports.getProperty = function (property, expand) {
+        if (!exports.canAnimate(property)) {
+            return null;
+        }
+        var prop = props[property];
+        var ret = {name: property};
+        Object.keys(prop).forEach(function (key) {
+            var value = prop[key];
+            if (Array.isArray(value)) {
+                if (key === 'properties' && expand) {
+                    value = value.map(function (subProp) {
+                        return exports.getProperty(subProp, expand);
+                    });
+                } else {
+                    value = value.slice(); // clone
+                }
+            }
+            ret[key] = value;
+        });
+        return ret;
+    };
 })();
