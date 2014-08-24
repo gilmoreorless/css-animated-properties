@@ -1,4 +1,8 @@
-(function () {
+/*!
+ * https://github.com/gilmoreorless/css-animated-properties
+ * MIT Licensed: http://gilmoreorless.mit-license.org/
+ */
+(function (exports) {
     /**
      * Data taken from https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties
      * If a property is not in this list, it's not able to be animated.
@@ -159,4 +163,9 @@
         });
         return ret;
     };
-})();
+})((function (root) {
+    // CommonJS
+    if (typeof module !== 'undefined' && module.exports !== undefined) return module.exports;
+    // Global `cssAnimProps`
+    return (root.cssAnimProps = {});
+})(this));

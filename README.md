@@ -89,6 +89,7 @@ cssAnimProps.getProperty('border-color', true);
 * `color`
 * `number`
 * `integer`
+* `transform`
 * `shadow-list`
 * `visibility`
 * `font-weight`
