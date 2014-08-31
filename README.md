@@ -7,7 +7,11 @@ But it might be useful for other people too, so I pulled out the data, cleaned i
 
 Enjoy.
 
-## Properties
+## Usage
+
+Available on npm as `css-animated-properties`, or in the browser as a global called `cssAnimProps`
+
+### Properties
 
 #### animatedProperties
 
@@ -16,7 +20,7 @@ The core data as a simple JS object. Each key is a CSS property. If a property i
 There are convenience methods (listed below) that mean you shouldn’t need to access this list directly, but it’s available for other use cases.
 
 
-## Methods
+### Methods
 
 #### canAnimate
 
@@ -96,3 +100,8 @@ cssAnimProps.getProperty('border-color', true);
 * `font-stretch`
 * `rectangle`
 * `basic-shape`
+
+## Licence
+
+MIT: [http://gilmoreorless.mit-license.org/]()
+

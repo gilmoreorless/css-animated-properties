@@ -1,0 +1,19 @@
+{
+  "name": "css-animated-properties",
+  "description": "A simple list of which CSS properties can be animated and how",
+  "keywords": ["css", "animate", "list"],
+  "version": "0.1.0",
+  "author": "Gilmore Davidson",
+  "homepage": "https://github.com/gilmoreorless/css-animated-properties",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gilmoreorless/css-animated-properties.git"
+  },
+  "main": "index.js",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://gilmoreorless.mit-license.org/"
+    }
+  ]
+}
