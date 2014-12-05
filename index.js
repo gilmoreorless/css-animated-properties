@@ -128,6 +128,68 @@
     };
 
     /**
+     * List of animatable types used by properties, with descriptions of how to interpolate each type.
+     * Data taken from http://www.w3.org/TR/css3-transitions/#animatable-types and some other W3C specs.
+     *
+     * @type {Object}
+     */
+    exports.types = {
+        'color': {
+            name: 'color',
+            href: 'http://www.w3.org/TR/css3-transitions/#animtype-color'
+        },
+        'length': {
+            name: 'length',
+            href: 'http://www.w3.org/TR/css3-transitions/#animtype-length'
+        },
+        'percentage': {
+            name: 'percentage',
+            href: 'http://www.w3.org/TR/css3-transitions/#animtype-percentage'
+        },
+        'length-percentage-calc': {
+            name: 'length, percentage, or calc',
+            href: 'http://www.w3.org/TR/css3-transitions/#animtype-lpcalc'
+        },
+        'integer': {
+            name: 'integer',
+            href: 'http://www.w3.org/TR/css3-transitions/#animtype-integer'
+        },
+        'font-weight': {
+            name: 'font weight',
+            href: 'http://www.w3.org/TR/css3-transitions/#animtype-font-weight'
+        },
+        'number': {
+            name: 'number',
+            href: 'http://www.w3.org/TR/css3-transitions/#animtype-number'
+        },
+        'rectangle': {
+            name: 'rectangle',
+            href: 'http://www.w3.org/TR/css3-transitions/#animtype-rect'
+        },
+        'visibility': {
+            name: 'visibility',
+            href: 'http://www.w3.org/TR/css3-transitions/#animtype-visibility'
+        },
+        'shadow-list': {
+            name: 'shadow list',
+            href: 'http://www.w3.org/TR/css3-transitions/#animtype-shadow-list'
+        },
+        // Other specs
+        'transform': {
+            name: 'transform',
+            href: 'http://www.w3.org/TR/css3-transforms/#interpolation-of-transforms'
+        },
+        'font-stretch': {
+            name: 'font stretch',
+            href: 'http://www.w3.org/TR/css3-fonts/#font-stretch-animation'
+        },
+        'basic-shape': {
+            name: 'basic shape',
+            href: 'http://www.w3.org/TR/css-shapes-1/#basic-shape-interpolation'
+        },
+    };
+
+    /**
      * Check if a CSS property can be animated
      * @param  {string} property CSS property name
      * @return {boolean}         True if the property can be animated
