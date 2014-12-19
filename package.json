@@ -1,8 +1,8 @@
 {
   "name": "css-animated-properties",
   "description": "A simple list of which CSS properties can be animated and how",
-  "keywords": ["css", "animate", "list"],
-  "version": "0.1.0",
+  "keywords": ["css", "animate", "animation", "animatable", "list"],
+  "version": "1.0.0",
   "author": "Gilmore Davidson",
   "homepage": "https://github.com/gilmoreorless/css-animated-properties",
   "repository": {
