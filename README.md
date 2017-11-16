@@ -32,7 +32,7 @@ There are convenience methods (listed below) that mean you shouldn’t need to a
 
 The types of values that can be animated. Each key is a value type that is referenced in the `animatedProperties` list. Each type contains properties of `name` (display name) and `href` (link to the W3C spec where the value type is defined).
 
-For quick reference, most of the types are defined at <http://www.w3.org/TR/css3-transitions/>.
+For quick reference, most of the types are defined at <https://www.w3.org/TR/css3-transitions/>.
 
 
 ### Methods
@@ -102,5 +102,5 @@ cssAnimProps.getProperty('border-color', true);
 
 ## Licence
 
-MIT: <http://gilmoreorless.mit-license.org/>
+MIT: <https://gilmoreorless.mit-license.org/>
 
