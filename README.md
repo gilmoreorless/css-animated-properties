@@ -102,5 +102,5 @@ cssAnimProps.getProperty('border-color', true);
 
 ## Licence
 
-MIT: <https://gilmoreorless.mit-license.org/>
+[MIT](LICENSE)
 
